@@ -1,0 +1,33 @@
+@import url("../brewery-1/reset.css");
+
+/* O reset vem primeiro */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    --fonte-principal: 'Inter', sans-serif;
+    --cor-principal: #667085;
+}
+
+body {
+    font-family: var(--fonte-principal);
+}
+ .cabecalho__nav {
+    font-family: var(--fonte-principal);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+ }
+
+.cabecalho__lista {
+    list-style-type: none;
+}
+
+.cabecalho__lista li {
+    display: inline;
+}
+
+.cabecalho__lista a {
+    text-decoration: none;
+    color: var(--cor-principal);
+}
