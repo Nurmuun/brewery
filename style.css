@@ -7,6 +7,8 @@
 :root {
     --fonte-principal: 'Inter', sans-serif;
     --cor-principal: #667085;
+    --cor-secundaria: #8E2424;
+    --branco: #FFF;
 }
 
 body {
@@ -30,4 +32,41 @@ body {
 .cabecalho__lista a {
     text-decoration: none;
     color: var(--cor-principal);
+}
+
+.lista__item {
+    padding: 1em;
+}
+
+#cadastrar__botao {
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 8px;
+    color: var(--branco);
+    background-color: var(--cor-secundaria);
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card__subtitulo {
+    color: var(--cor-secundaria);
+    font-size: 1em;
+
+}
+
+.card__titulo {
+    font-size: 3em;
+}
+
+.card__texto {
+    color: var(--cor-principal);
+    font-size: 1.25em;
+}
+
+.container {
+    display: flex;
 }
