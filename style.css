@@ -2,13 +2,14 @@
 
 /* O reset vem primeiro */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
 :root {
     --fonte-principal: 'Inter', sans-serif;
     --cor-principal: #667085;
     --cor-secundaria: #8E2424;
     --branco: #FFF;
+    --cor-subtitulo: #101828;
 }
 
 body {
@@ -67,6 +68,46 @@ body {
     font-size: 1.25em;
 }
 
-.container {
+.metricas {
     display: flex;
+    justify-content: space-around;
+}
+
+.metricas__container {
+    padding: 1em;
+    margin: 0 2em;
+    flex-wrap: wrap;
+}
+
+.metricas__titulo {
+    color: var(--cor-secundaria);
+    font-size: 60px;
+    font-size: 600;
+}
+
+.metricas__subtitulo {
+    color: var(--cor-subtitulo);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.metricas__texto {
+    color: var(--cor-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.vagas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.vagas__card {
+    text-align: center;
+}
+
+.vagas__imagem {
+    width: 80%;
 }
